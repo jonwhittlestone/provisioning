@@ -1,0 +1,22 @@
+---
+- hosts: doylestone02
+  become: yes
+  pre_tasks:
+    - name: Update apt cache if needed.
+      apt: update_cache=yes cache_valid_time=3600
+
+  tasks:
+    - name: Get software for apt repository management.
+      apt:
+        state: present
+        name:
+          - python3-apt
+          - python3-pycurl
+
+    - name: Get basic utilities
+      apt:
+        state: present
+        # state: absent
+        name:
+          - git
+          - curl

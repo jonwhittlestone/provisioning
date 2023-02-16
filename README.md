@@ -22,3 +22,11 @@
    Mem:            29Gi       688Mi        27Gi       2.0Mi       1.2Gi        28Gi
    Swap:             0B          0B          0B
    ```
+
+4. Run playbook
+
+   ```bash
+   ➜  pwd
+   /home/jon/code/provisioning/provision-doylestone02/ansible
+   ➜  ansible ansible-playbook main.yml --extra-vars "ansible_sudo_pass=<sudo_password_for_doylestone02>"
+   ```
