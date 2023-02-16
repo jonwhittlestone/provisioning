@@ -9,18 +9,30 @@
 2. Activate virtualenv to gain access to Ansible
 
    ```bash
-   ➜  cd provision-doylestone02
+   ➜  cd provision-doylestone02/ansible
    ➜  poetry install
    ```
 
-3. Sanity check Ansible connection
+3. Sanity check Ansible connection with setup module
 
    ```bash
-   ➜  provision-doylestone02 ansible -i ansible/inventory doylestone02 -a "free -h" -u fam
-   192.168.0.97 | CHANGED | rc=0 >>
-               total        used        free      shared  buff/cache   available
-   Mem:            29Gi       688Mi        27Gi       2.0Mi       1.2Gi        28Gi
-   Swap:             0B          0B          0B
+   ➜  ansible -i inventory doylestone02 -m setup
+   192.168.0.203 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.0.97",
+            "192.168.0.203"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::b3ca:7bdf:f2d8:b7aa",
+            "fe80::3ef5:2964:8942:db19"
+        ],
+        "ansible_apparmor": {
+            "status": "enabled"
+        },
+        "ansible_architecture": "x86_64",
+        ...
+    }
    ```
 
 4. Run playbook
@@ -28,5 +40,5 @@
    ```bash
    ➜  pwd
    /home/jon/code/provisioning/provision-doylestone02/ansible
-   ➜  ansible ansible-playbook main.yml --extra-vars "ansible_sudo_pass=<sudo_password_for_doylestone02>"
+   ➜  ansible-playbook main.yml --extra-vars "ansible_sudo_pass=<sudo_password_for_doylestone02>"
    ```
