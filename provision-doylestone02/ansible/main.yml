@@ -19,6 +19,7 @@
         name:
           - python3-apt
           - python3-pycurl
+          - python3-pip
 
     - name: Install basic utilities
       apt:
@@ -31,5 +32,7 @@
           - neovim
           - virtualbox
           - vagrant
+          - htop
+          - bpytop
 
     # - name: Install VScode-insiders # see: Geerling's breakdown of installing a package from web https://youtu.be/SLW4LX7lbvE?t=1610
