@@ -1,14 +1,18 @@
 ---
 - hosts: doylestone02
+  vars_files:
+    # Contains ansible_become_pass
+    - inventory/group_vars/vault.yml
+
   become: yes
   pre_tasks:
+    - debug:
+        msg: "👷 Welcome! Provisioning {{ansible_nodename}} at {{ansible_default_ipv4['address']}} "
+
     - name: Update apt cache if needed.
       apt: update_cache=yes cache_valid_time=3600
 
   tasks:
-    - debug:
-        msg: "👷 Welcome! Provisioning {{ansible_nodename}} at {{ansible_default_ipv4['address']}} "
-
     - name: Get software for apt repository management.
       apt:
         state: present

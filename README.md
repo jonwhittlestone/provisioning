@@ -40,5 +40,5 @@
    ```bash
    ➜  pwd
    /home/jon/code/provisioning/provision-doylestone02/ansible
-   ➜  ansible-playbook main.yml --extra-vars "ansible_sudo_pass=<sudo_password_for_doylestone02>"
+   ➜  ansible-playbook main.yml --vault-password-file=../../.vault-password
    ```
