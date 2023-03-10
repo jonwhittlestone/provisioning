@@ -12,27 +12,10 @@
     - name: Update apt cache if needed.
       apt: update_cache=yes cache_valid_time=3600
 
-  tasks:
-    - name: Get software for apt repository management.
-      apt:
-        state: present
-        name:
-          - python3-apt
-          - python3-pycurl
-          - python3-pip
+  roles:
+    - base
+    - docker
 
-    - name: Install basic utilities
-      apt:
-        state: present
-        # state: absent
-        name:
-          - git
-          - curl
-          - software-properties-common
-          - neovim
-          - virtualbox
-          - vagrant
-          - htop
-          - bpytop
+  tasks:
 
     # - name: Install VScode-insiders # see: Geerling's breakdown of installing a package from web https://youtu.be/SLW4LX7lbvE?t=1610

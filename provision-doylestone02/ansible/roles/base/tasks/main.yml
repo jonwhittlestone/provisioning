@@ -1,0 +1,26 @@
+---
+- name: Get software for apt repository management.
+  apt:
+    state: present
+    name:
+      - python3-apt
+      - python3-pycurl
+      - python3-pip
+      - virtualenv
+      - python3-setuptools
+
+- name: Install basic utilities
+  apt:
+    state: present
+    # state: absent
+    name:
+      - git
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+      - neovim
+      - virtualbox
+      - vagrant
+      - htop
+      - bpytop

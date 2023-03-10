@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Jon Whittlestone <dev@howapped.com>"]
 readme = "README.md"
-packages = [{include = "provision_doylestone02"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
