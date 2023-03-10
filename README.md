@@ -4,7 +4,12 @@
 
 ### Usage
 
-1. Ensure public key is in `authorized_keys` on `doylestone02`
+1. Keys:
+    - Ensure public key for controller is in `authorized_keys` on `doylestone02`
+    - For GitHub ssh clone, copy private key to target
+    
+        ```scp ~/.ssh/id_rsa fam@doylestone02:/home/fam/.ssh/``` 
+
 
 2. Activate virtualenv to gain access to Ansible
 

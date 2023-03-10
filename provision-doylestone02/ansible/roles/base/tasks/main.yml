@@ -24,3 +24,23 @@
       - vagrant
       - htop
       - bpytop
+
+- name: Create code directory if it does not exist
+  ansible.builtin.file:
+    path: /home/fam/code
+    state: directory
+    mode: '0777'
+
+- name: Check if path exists
+  stat: path=/home/fam/code
+  register: check_code_path
+
+- name: Clone the private provisioning repository into ~/code.
+  git:
+    repo: git@github.com:jonwhittlestone/provisioning.git
+    version: main
+    dest: /home/fam/code/provisioning
+    accept_hostkey: yes
+  # ssh-agent doesn't allow key to pass through remote sudo commands.
+  become: no
+  when: check_code_path.stat.exists
