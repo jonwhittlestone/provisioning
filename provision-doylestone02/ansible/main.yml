@@ -15,6 +15,7 @@
   roles:
     - base
     - docker
+    - pallxk.code_server
 
   tasks:
 
