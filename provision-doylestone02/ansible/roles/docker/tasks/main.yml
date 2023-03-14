@@ -29,3 +29,9 @@
     groups: docker
   become: true
   loop: "{{ docker_users }}"
+
+- name: Update apt and install docker-compose
+  apt:
+    name: docker-compose
+    state: latest
+    update_cache: true
