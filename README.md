@@ -47,3 +47,6 @@
    /home/jon/code/provisioning/provision-doylestone02/ansible
    ➜  ansible-playbook main.yml --vault-password-file=../../.vault-password
    ```
+### Features
+
+* `code-server` at http://192.168.0.203:8443/?folder=/home/fam/code/provisioning'
