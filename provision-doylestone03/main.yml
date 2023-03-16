@@ -1,0 +1,39 @@
+---
+- hosts: all
+  become: yes
+
+
+  pre_tasks:
+    - debug:
+        msg: "👷 Welcome! Provisioning {{ansible_nodename}} at {{ansible_default_ipv4['address']}} "
+
+    - name: Update apt cache if needed.
+      apt: 
+        update_cache: true 
+        cache_valid_time: 3600
+
+
+  vars:
+      jenkins_hostname: localhost
+      jenkins_http_port: 8080
+      java_packages:
+        - openjdk-11-jdk
+
+  roles:
+    - role: geerlingguy.java
+    - role: geerlingguy.jenkins
+
+  tasks:
+
+    # - name: Get Jenkins package dependencies.
+    #   apt:
+    #     state: present
+    #     name:
+    #       - curl
+    #       - openjdk-11-jre
+    #       - fontconfig
+  
+  # $ wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+  # $ sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+  # $ sudo apt-get update
+  # $ sudo apt-get install jenkins

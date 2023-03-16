@@ -47,6 +47,25 @@
    /home/jon/code/provisioning/provision-doylestone02/ansible
    ➜  ansible-playbook main.yml --vault-password-file=../../.vault-password
    ```
+
 ### Features
 
-* `code-server` at http://192.168.0.203:8443/?folder=/home/fam/code/provisioning'
+* code-server
+  * http://192.168.0.203:8443/?folder=/home/fam/code/provisioning
+  
+* Jenkins
+  * http://192.168.0.203:8080
+
+
+## provision-doylestone03
+
+### Usage
+
+Run the `Vagrantfile` with `vagrant up --provision` to start the VM. [Jenkins](http://192.168.0.203:8080) will be available on port 8080
+
+```bash
+➜  pwd
+/home/jon/code/provisioning/provision-doylestone03/
+
+➜ vagrant up --provision
+```
