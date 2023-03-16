@@ -24,6 +24,8 @@
     - name: gantsign.oh-my-zsh
       users:
         - username: fam
+    - geerlingguy.ansible
+    
 
   tasks:
 
