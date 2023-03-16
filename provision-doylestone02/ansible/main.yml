@@ -21,6 +21,9 @@
           {
             "serviceUrl": "https://extensions.coder.com/api"
           }
+    - name: gantsign.oh-my-zsh
+      users:
+        - username: fam
 
   tasks:
 
