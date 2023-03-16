@@ -11,6 +11,9 @@
     state: directory
     path: "{{ code_server_dir }}"
 
+- debug:
+    msg: "👷 {{code_server_tar_url}} "
+
 - name: Download code-server
   become: yes
   unarchive:

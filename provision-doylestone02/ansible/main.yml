@@ -15,7 +15,12 @@
   roles:
     - base
     - docker
-    - pallxk.code_server
+    - name: pallxk.code_server
+      code_server_env:
+        EXTENSIONS_GALLERY: >
+          {
+            "serviceUrl": "https://extensions.coder.com/api"
+          }
 
   tasks:
 

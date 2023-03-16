@@ -1,6 +1,6 @@
 [Unit]
 Description=Run VS Code on a remote server.
-Documentation=https://github.com/cdr/code-server
+Documentation=https://github.com/coder/code-server
 After=network.target network-online.target
 
 [Service]

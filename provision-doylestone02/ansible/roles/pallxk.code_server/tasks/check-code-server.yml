@@ -40,7 +40,7 @@
 
 - name: Check latest code-server version
   uri:
-    url: https://api.github.com/repos/cdr/code-server/releases
+    url: https://api.github.com/repos/coder/code-server/releases
   register: code_server_releases
   when: code_server_ver is undefined
 
