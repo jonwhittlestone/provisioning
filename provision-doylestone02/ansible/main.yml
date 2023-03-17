@@ -25,6 +25,13 @@
       users:
         - username: fam
     - geerlingguy.ansible
+    - name: sdarwin.vnc
+      vnc_users:
+      - username: 'fam'
+        usergroup: 'fam'     # usergroup is optional. Defaults to username.
+        #port 5901 is 1
+        vnc_num: 1
+        vnc_default_password: mypassword
     
 
   tasks:
