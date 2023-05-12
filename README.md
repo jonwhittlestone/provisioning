@@ -2,6 +2,18 @@
 
 ## provision-doylestone02
 
+### Todos
+
+- [ ] add pip3 yamllint for ansible linting
+- [ ] add `pip3 install molecule`  and `pip3 install molecule-docker` for ansible integration testing
+- [ ] add path to .zshrc
+- [ ] .oh-my-zsh theme is different to other workstations
+- [ ] theme/extension for code-server: 
+    - vim,
+    - bearded theme altica
+    - GitLens
+    - YAML from RedHat
+
 ### Usage
 
 1. Keys:
