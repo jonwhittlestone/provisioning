@@ -1,27 +1,46 @@
 # Provisioning
 
+A collection of Ansible/nixOS scripts.
+
+## nixos-config
+
+Basic scripts for provisioning my dev laptop
+
+```bash
+cd nixos-config; make deploy
+```
+
+### Todo.
+
+```bash
+- [ ] Modularise
+- [ ] Plex as service
+- [ ] How to use this on a vanilla install
+
+```
+
 ## provision-doylestone02
 
 ### Todos
 
 - [ ] add pip3 yamllint for ansible linting
-- [ ] add `pip3 install molecule`  and `pip3 install molecule-docker` for ansible integration testing
+- [ ] add `pip3 install molecule` and `pip3 install molecule-docker` for ansible integration testing
 - [ ] add path to .zshrc
 - [ ] .oh-my-zsh theme is different to other workstations
-- [ ] theme/extension for code-server: 
-    - vim,
-    - bearded theme altica
-    - GitLens
-    - YAML from RedHat
+- [ ] theme/extension for code-server:
+  - vim,
+  - bearded theme altica
+  - GitLens
+  - YAML from RedHat
 
 ### Usage
 
 1. Keys:
-    - Ensure public key for controller is in `authorized_keys` on `doylestone02`
-    - For GitHub ssh clone, copy private key to target
-    
-        ```scp ~/.ssh/id_rsa fam@doylestone02:/home/fam/.ssh/``` 
 
+   - Ensure public key for controller is in `authorized_keys` on `doylestone02`
+   - For GitHub ssh clone, copy private key to target
+
+     `scp ~/.ssh/id_rsa fam@doylestone02:/home/fam/.ssh/`
 
 2. Activate virtualenv to gain access to Ansible
 
@@ -62,12 +81,10 @@
 
 ### Features
 
-* code-server
-  * http://192.168.0.203:8443/?folder=/home/fam/code/provisioning
-  
-* Jenkins
-  * http://192.168.0.203:8080
-
+- code-server
+  - http://192.168.0.203:8443/?folder=/home/fam/code/provisioning
+- Jenkins
+  - http://192.168.0.203:8080
 
 ## provision-doylestone03
 
