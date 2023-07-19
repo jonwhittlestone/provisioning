@@ -15,7 +15,7 @@ cd nixos-config; make deploy
 ```bash
 - [ ] Modularise
 - [ ] Plex as service
-- [ ] How to use this on a vanilla install
+- [ ] How to use this on a vanilla install nixOS
 
 ```
 
@@ -23,6 +23,7 @@ cd nixos-config; make deploy
 
 ### Todos
 
+```bash
 - [ ] add pip3 yamllint for ansible linting
 - [ ] add `pip3 install molecule` and `pip3 install molecule-docker` for ansible integration testing
 - [ ] add path to .zshrc
@@ -32,6 +33,7 @@ cd nixos-config; make deploy
   - bearded theme altica
   - GitLens
   - YAML from RedHat
+```
 
 ### Usage
 

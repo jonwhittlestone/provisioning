@@ -78,6 +78,7 @@
 
     # langs and runtimes
     python311
+    poetry
     
     nodejs
     nodePackages_latest.typescript
@@ -174,6 +175,15 @@
       urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
     };
   };
+
+  # a cat(1) clone with syntax highlighting and Git integration.
+  programs.bat = {
+    enable = true;
+    config = {
+      pager = "less -FR";
+    };
+  };
+
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
