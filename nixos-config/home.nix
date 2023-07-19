@@ -69,7 +69,7 @@
     # networking tools
     #mtr # A network diagnostic tool
     #iperf3
-    dnsutils  # `dig` + `nslookup`
+    #dnsutils  # `dig` + `nslookup`
     #ldns # replacement of `dig`, it provide the command `drill`
     #aria2 # A lightweight multi-protocol & multi-source command-line download utility
     #socat # replacement of openbsd-netcat
@@ -78,9 +78,13 @@
 
     # langs and runtimes
     python311
-    nodejs_20
+    
+    nodejs
     nodePackages_latest.typescript
-    docker
+    nodePackages.npm
+    nodePackages.pnpm
+    yarn
+
     docker-compose
 
 
@@ -95,6 +99,11 @@
     gawk
     zstd
     gnupg
+    gnomeExtensions.clipboard-indicator
+
+    # media
+    vlc
+    plex
 
     # nix related
     #
@@ -107,7 +116,7 @@
     glow # markdown previewer in terminal
 
     btop  # replacement of htop/nmon
-    iotop # io monitoring
+    #iotop # io monitoring
     #iftop # network monitoring
 
     # system call monitoring

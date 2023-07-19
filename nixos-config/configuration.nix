@@ -18,10 +18,16 @@
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Flakes use Git to pull dependencies from data sources, so Git must be installed first
+    gnumake
     git
     vim
     wget
     curl
+    gcc # c/c++ compiler, required by nvim-treesitter!
+    llvmPackages.clang-unwrapped # c/c++ tools with clang-tools such as clangd
+    gdb
+    lldb
+
     pkgs.vivaldi
 
     # dev
@@ -106,10 +112,16 @@
   users.users.jon = {
     isNormalUser = true;
     description = "jon";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "wireshark" ];
     packages = with pkgs; [
       firefox
     ];
+  };
+
+  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
   };
 
   fonts = {
