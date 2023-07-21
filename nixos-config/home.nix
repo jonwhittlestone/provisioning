@@ -79,6 +79,8 @@
     # langs and runtimes
     python311
     poetry
+    python311Packages.black   # python formatter
+    nodePackages.pyright # python language server
     
     nodejs
     nodePackages_latest.typescript
@@ -87,7 +89,6 @@
     yarn
 
     docker-compose
-
 
     # misc
     variety			# wallpaper manager
