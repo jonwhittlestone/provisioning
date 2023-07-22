@@ -29,6 +29,7 @@
     lldb
 
     pkgs.vivaldi
+    flameshot
 
     # dev
     # Install Helix from the `helix` input
@@ -40,6 +41,10 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  # Limit the number of generations to keep
+  boot.loader.systemd-boot.configurationLimit = 10;
+  nix.settings.auto-optimise-store = true;
 
   networking.hostName = "madebyjon"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -117,6 +122,14 @@
       firefox
     ];
   };
+
+  # services.flameshot.enable = true;
+  # services.flameshot.settings = {
+  #   General = {
+  #     disabledTrayIcon = true;
+  #     showStartupLaunchMessage = false;
+  #   };
+  # }
 
   virtualisation.docker.enable = true;
   virtualisation.docker.rootless = {
