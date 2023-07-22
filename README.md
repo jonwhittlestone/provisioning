@@ -1,6 +1,6 @@
 # Provisioning
 
-A collection of Ansible/nixOS scripts.
+A collection of personal Ansible/nixOS scripts.
 
 ## nixos-config
 
@@ -14,14 +14,13 @@ cd nixos-config; make deploy
 
 ```bash
 - [ ] Modularise
-- [ ] Plex as service
 - [ ] How to use this on a vanilla install nixOS
 
 ```
 
 ## provision-doylestone02
 
-### Todos
+### Todo.
 
 ```bash
 - [ ] add pip3 yamllint for ansible linting
@@ -35,7 +34,7 @@ cd nixos-config; make deploy
   - YAML from RedHat
 ```
 
-### Usage
+### Usage - Ansible
 
 1. Keys:
 

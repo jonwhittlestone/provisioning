@@ -103,9 +103,15 @@
     gnupg
     gnomeExtensions.clipboard-indicator
 
+    # misc
+    flameshot         # run `flameshot gui`
+
+    # messaging
+    signal-desktop
+
     # media
     vlc
-    plex
+    # plex          # not working as service on localhost:32400
 
     # nix related
     #
@@ -164,7 +170,6 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
-    # TODO add your cusotm bashrc here
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
@@ -174,6 +179,7 @@
       k = "kubectl";
       urldecode = "python3 -c 'import sys, urllib.parse as ul; print(ul.unquote_plus(sys.stdin.read()))'";
       urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
+      fl = "flameshot gui";
     };
   };
 
@@ -184,6 +190,17 @@
       pager = "less -FR";
     };
   };
+
+  services = {
+    flameshot.enable = true;
+    flameshot.settings = {
+      General = {
+        disabledTrayIcon = true;
+        showStartupLaunchMessage = false;
+      };
+    };
+  };
+
 
 
   # This value determines the home Manager release that your
