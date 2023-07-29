@@ -79,8 +79,18 @@
     # langs and runtimes
     python311
     poetry
-    python311Packages.black   # python formatter
-    nodePackages.pyright # python language server
+    python311Packages.black               # python formatter
+    python311Packages.ipython
+    python311Packages.pip
+    python311Packages.pipx
+    python311Packages.flake8
+    python311Packages.jupyterlab
+    # python311Packages.ipykernel
+    # pandas
+    # requests
+    # pyquery
+    # pyyaml
+    nodePackages.pyright                  # python language server
     
     nodejs
     nodePackages_latest.typescript
@@ -89,6 +99,7 @@
     yarn
 
     docker-compose
+    gitkraken
 
     # misc
     variety			# wallpaper manager
@@ -138,6 +149,7 @@
     #ethtool
     #pciutils # lspci
     #usbutils # lsusb
+    # gparted
   ];
 
   # starship - an customizable prompt for any shell
@@ -180,6 +192,8 @@
       urldecode = "python3 -c 'import sys, urllib.parse as ul; print(ul.unquote_plus(sys.stdin.read()))'";
       urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
       fl = "flameshot gui";
+      prv = "code ~/code/provisioning-repos.code-workspace";
+      nixd = "cd ~/code/provisioning/nixos-config/ && make deploy && cd -";
     };
   };
 
