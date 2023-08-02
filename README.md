@@ -21,11 +21,15 @@ Basic scripts for provisioning my dev laptop
 cd nixos-config; make deploy
 ```
 
+> Coming to a fresh, new, machine?
+> Read how to set up a git managed Flake on NixOS from scratch
+> [fresh-nixos-guide.md](./fresh-nixos-guide.md)
+
 ### Todo.
 
 ```bash
 - [x] Modularise
-- [ ] How to use this on a vanilla install nixOS
+- [x] How to use this on a vanilla install NixOS
 
 ```
 
