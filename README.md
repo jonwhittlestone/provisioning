@@ -2,6 +2,16 @@
 
 A collection of personal Ansible/nixOS scripts.
 
+```
+doylestone01    Dual-boot Ryzen desktop: Win11
+doylestone02    Dual-boot Ryzen desktop: Ubuntu 22.04
+doylestone03    Dual-boot Ryzen desktop: VM
+doylestone04    Dual-boot L380: Win11
+doylestone05    rPi 400: monitoring, pi-hole etc
+doylestone06    Dual-boot L380: NixOS
+madebyjon       T480s NixOS
+```
+
 ## nixos-config
 
 Basic scripts for provisioning my dev laptop
