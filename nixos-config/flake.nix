@@ -30,29 +30,11 @@
       ...
   }: {
     nixosConfigurations = {
-      nixos-test = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-
-        
-        modules = [
-          ./hosts/doylestone03
-
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-
-            home-manager.extraSpecialArgs = inputs;
-            home-manager.users.jon = import ./home;
-          }
-        ];
-      };
-
-      doylestone03 = nixpkgs.lib.nixosSystem {
+      doylestone06 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         modules = [
-          ./hosts/doylestone03
+          ./hosts/doylestone06
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

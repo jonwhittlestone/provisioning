@@ -5,4 +5,4 @@
 ############################################################################
 
 deploy: 
-	sudo nixos-rebuild switch --flake /etc/nixos#doylestone03
+	sudo nixos-rebuild switch --flake . #doylestone06

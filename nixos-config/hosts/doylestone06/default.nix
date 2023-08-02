@@ -13,7 +13,7 @@
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
-    networking.hostName = "doylestone03"; # Define your hostname.
+    networking.hostName = "doylestone06"; # Define your hostname.
 
     # Enable networking
     networking.networkmanager.enable = true;
