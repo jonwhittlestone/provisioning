@@ -3,14 +3,14 @@
 A collection of personal Ansible/nixOS scripts.
 
 ```
-host        description                                 NixOS     Ansible
+host            description                                 NixOS     Ansible
 doylestone01    Dual-boot Ryzen desktop: Win11
 doylestone02    Dual-boot Ryzen desktop: Ubuntu 22.04                   ✅
 doylestone03    Dual-boot Ryzen desktop: VM                             ✅
 doylestone04    Dual-boot L380: Win11
 doylestone05    rPi 400: monitoring, pi-hole etc
-doylestone06    Dual-boot L380: NixOS                       ✅
-madebyjon       T480s NixOS                                 ✅
+doylestone06    Dual-boot L380: NixOS                         ✅
+madebyjon       T480s NixOS                                   ✅
 ```
 
 ## nixos-config
@@ -24,26 +24,12 @@ cd nixos-config; make deploy
 ### Todo.
 
 ```bash
-- [ ] Modularise
+- [x] Modularise
 - [ ] How to use this on a vanilla install nixOS
 
 ```
 
 ## provision-doylestone02
-
-### Todo.
-
-```bash
-- [ ] add pip3 yamllint for ansible linting
-- [ ] add `pip3 install molecule` and `pip3 install molecule-docker` for ansible integration testing
-- [ ] add path to .zshrc
-- [ ] .oh-my-zsh theme is different to other workstations
-- [ ] theme/extension for code-server:
-  - vim,
-  - bearded theme altica
-  - GitLens
-  - YAML from RedHat
-```
 
 ### Usage - Ansible
 
