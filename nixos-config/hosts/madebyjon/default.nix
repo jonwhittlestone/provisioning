@@ -1,3 +1,4 @@
+
 { config, pkgs, ... }:
 
 {
@@ -17,7 +18,7 @@
     boot.loader.systemd-boot.configurationLimit = 5;
     nix.settings.auto-optimise-store = true;
 
-    networking.hostName = "doylestone06"; # Define your hostname.
+    networking.hostName = "madebyjon"; 
 
     # Enable networking
     networking.networkmanager.enable = true;
