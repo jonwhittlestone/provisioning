@@ -7,16 +7,11 @@
 
         # Include the results of the hardware scan.
         ./hardware-configuration.nix
-    ]
+    ];
 
     # Bootloader.
-    boot.loader = {
-        efi = {
-        canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot/efi"; # ← use the same mount point here.
-        };
-        systemd-boot.enable = true;
-    };
+    boot.loader.systemd-boot.enable = true;
+    boot.loader.efi.canTouchEfiVariables = true;
 
     networking.hostName = "doylestone03"; # Define your hostname.
 

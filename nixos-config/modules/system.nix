@@ -75,4 +75,5 @@
     isNormalUser = true;
     description = "Jon Whittlestone";
     extraGroups = [ "networkmanager" "wheel" ];
+  };
 }

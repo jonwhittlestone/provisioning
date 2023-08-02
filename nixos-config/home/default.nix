@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 
+{
   imports = [
     ./all
   ];
 
-{
   home = {
     username = "jon";
     homeDirectory = "/home/jon";

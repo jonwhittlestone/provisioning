@@ -37,14 +37,11 @@
         modules = [
           ./hosts/doylestone03
 
-          # home-manager 作为 nixos 的一个 module
-          # 这样在 nixos-rebuild switch 时，home-manager 也会被自动部署，不需要额外执行 home-manager switch 命令
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            # 使用 home-manager.extraSpecialArgs 自定义传递给 ./home 的参数
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.jon = import ./home;
           }
