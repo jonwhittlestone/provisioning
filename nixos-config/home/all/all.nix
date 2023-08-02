@@ -137,15 +137,10 @@
       urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
       fl = "flameshot gui";
       prv = "code ~/code/provisioning-repos.code-workspace";
-      # nixd = "cd ~/code/provisioning/nixos-config/ && make deploy && cd -";
+      nixd = "cd ~/code/provisioning/nixos-config/ && make deploy && cd -";
     };
   };
 
-  home.shellAliases = {
-    fl = "flameshot gui";
-    prv = "code ~/code/provisioning-repos.code-workspace";
-    nixd = "cd ~/code/provisioning/nixos-config/ && make deploy && cd -";
-  };
 
   # a cat(1) clone with syntax highlighting and Git integration.
   programs.bat = {
