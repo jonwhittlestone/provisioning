@@ -5,4 +5,4 @@
 ############################################################################
 
 deploy: 
-	nixos-rebuild switch --flake . --use-remote-sudo
+	sudo nixos-rebuild switch --flake . 
