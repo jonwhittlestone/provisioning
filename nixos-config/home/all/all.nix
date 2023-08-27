@@ -60,6 +60,11 @@
     nodePackages.pnpm
     yarn
 
+    # databases and tooling
+    mongosh
+    mongodb-compass
+
+    # dev tooling
     docker-compose
     gitkraken
 
