@@ -71,6 +71,7 @@
     sysstat
     lm_sensors  # for `sensors` command
     xclip
+    wakeonlan
     gnome.gnome-tweaks
   ];
 
