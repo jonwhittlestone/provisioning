@@ -56,6 +56,7 @@
     nodejs
     nodePackages_latest.typescript
     nodePackages.npm
+    nodePackages.emoj
     nodePackages.pnpm
     yarn
 

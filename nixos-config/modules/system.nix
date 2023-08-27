@@ -70,6 +70,8 @@
     git
     sysstat
     lm_sensors  # for `sensors` command
+    xclip
+    gnome.gnome-tweaks
   ];
 
   virtualisation.docker.enable = true;
