@@ -74,6 +74,12 @@
     xclip
     wakeonlan
     gnome.gnome-tweaks
+    wine
+    mono        # open-source .NET framework used for Wine
+    tmux
+    wakeonlan
+
+    yt-dlp
   ];
 
   virtualisation.docker.enable = true;
