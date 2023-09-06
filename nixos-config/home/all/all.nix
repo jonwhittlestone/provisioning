@@ -92,6 +92,7 @@
 
 
     # productivity
+    marktext
     glow # markdown previewer in terminal
 
     btop  # replacement of htop/nmon
