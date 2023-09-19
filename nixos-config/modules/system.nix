@@ -80,6 +80,10 @@
     wakeonlan
 
     yt-dlp
+
+    # reStream (which is screenshare for Remarkable Tablet)
+    lz4 
+    ffmpeg_6-full
   ];
 
   virtualisation.docker.enable = true;
@@ -135,9 +139,16 @@
   };
 
 
+
   users.users.jon = {
     isNormalUser = true;
     description = "Jon Whittlestone";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
+
+    openssh.authorizedKeys.keys = [
+      # add public keys for authorized SSH connections here
+
+    ];
   };
+  
 }
