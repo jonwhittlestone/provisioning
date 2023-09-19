@@ -39,8 +39,14 @@
 
     # utils
     jq # A lightweight and flexible command-line JSON processor
+
+    # networking
     nmap # A utility for network discovery and security auditing
     ipcalc  # it is a calculator for the IPv4/v6 addresses
+    wireguard-tools
+    openresolv
+    wgnord
+    # openvpn
 
     # langs and runtimes
     python311
@@ -51,6 +57,7 @@
     python311Packages.pipx
     python311Packages.flake8
     python311Packages.jupyterlab
+    python311Packages.pgcli
     nodePackages.pyright                  # python language server
     
     nodejs
@@ -59,6 +66,8 @@
     nodePackages.emoj
     nodePackages.pnpm
     yarn
+
+    #jdk11                   # for datahub development
 
     # databases and tooling
     mongosh
@@ -166,5 +175,10 @@
       };
     };
   };
+    
+  # services.plex = {
+  #   enable = true;
+  #   openFirewall = true;
+  # };
 
 }
