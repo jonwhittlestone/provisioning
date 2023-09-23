@@ -75,6 +75,7 @@
 
     # dev tooling
     docker-compose
+    terraform
     gitkraken
 
     # misc
