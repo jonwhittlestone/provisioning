@@ -75,8 +75,12 @@
 
     # dev tooling
     docker-compose
-    terraform
     gitkraken
+
+    # cloud
+    google-cloud-sdk
+    awscli
+    terraform
 
     # misc
     variety			# wallpaper manager
