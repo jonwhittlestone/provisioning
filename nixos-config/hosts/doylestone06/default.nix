@@ -14,7 +14,7 @@
     boot.loader.efi.canTouchEfiVariables = true;
 
     # Limit the number of generations to keep
-    boot.loader.systemd-boot.configurationLimit = 5;
+    boot.loader.systemd-boot.configurationLimit = 10;
     nix.settings.auto-optimise-store = true;
 
     networking.hostName = "doylestone06"; # Define your hostname.
