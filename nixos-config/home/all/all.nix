@@ -67,8 +67,6 @@
     nodePackages.pnpm
     yarn
 
-    #jdk11                   # for datahub development
-
     # databases and tooling
     mongosh
     mongodb-compass
@@ -159,7 +157,10 @@
       urlencode = "python3 -c 'import sys, urllib.parse as ul; print(ul.quote_plus(sys.stdin.read()))'";
       fl = "flameshot gui";
       prv = "code ~/code/provisioning-repos.code-workspace";
+
+      # folder aliases
       nixd = "cd ~/code/provisioning/nixos-config/ && make deploy && cd -";
+      dedir = "cd ~/code/learn/data-engineering/data-engineering-zoomcamp";
     };
   };
 
