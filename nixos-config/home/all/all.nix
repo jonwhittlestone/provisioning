@@ -101,6 +101,7 @@
 
     # media
     vlc
+    audacity
 
 
     # productivity
