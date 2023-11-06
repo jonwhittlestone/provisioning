@@ -108,6 +108,7 @@
     # productivity
     marktext
     glow # markdown previewer in terminal
+    obsidian
 
     btop  # replacement of htop/nmon
 
