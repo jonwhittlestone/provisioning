@@ -70,6 +70,7 @@
     # databases and tooling
     mongosh
     mongodb-compass
+    dbeaver
 
     # dev tooling
     docker-compose
