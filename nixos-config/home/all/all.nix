@@ -39,6 +39,7 @@
 
     # utils
     jq # A lightweight and flexible command-line JSON processor
+    httpie
 
     # networking
     nmap # A utility for network discovery and security auditing
@@ -46,7 +47,6 @@
     wireguard-tools
     openresolv
     wgnord
-    # openvpn
 
     # langs and runtimes
     python311
