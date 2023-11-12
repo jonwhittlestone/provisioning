@@ -96,6 +96,8 @@
 
     # misc
     flameshot         # run `flameshot gui`
+    darktable
+    shotwell
 
     # messaging
     signal-desktop
