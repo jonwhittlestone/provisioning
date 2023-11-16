@@ -65,6 +65,7 @@
     nodePackages.npm
     nodePackages.emoj
     nodePackages.pnpm
+    nodePackages.serverless
     yarn
 
     # databases and tooling
