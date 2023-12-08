@@ -112,6 +112,7 @@
     marktext
     glow # markdown previewer in terminal
     obsidian
+    maestral
 
     btop  # replacement of htop/nmon
 
